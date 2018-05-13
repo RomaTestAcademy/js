@@ -23,6 +23,7 @@ class Fighter{
 		}
 	}
 	gameOver(won, dead){
-		console.log(`GAME OVER \n${won.toUpperCase()} - won \n${dead.toUpperCase()} - dead`);
+		let message = `GAME OVER \n${won.toUpperCase()} - won \n${dead.toUpperCase()} - dead`;
+		console.log(message);
 	}
 }
