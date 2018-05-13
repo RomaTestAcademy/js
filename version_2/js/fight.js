@@ -18,7 +18,7 @@ function fight(fighter, improvedFighter, ...point){
 		}
 		if(improvedFighter.health <= 0){
 			gameOver(fighter.name, improvedFighter.name);
-		}
+		}	
 	}
 }
 function gameOver(won, dead){

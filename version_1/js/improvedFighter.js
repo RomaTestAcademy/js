@@ -3,6 +3,6 @@ class ImprovedFighter extends Fighter{
 		super(name, power, health);
 	}
 	doubleHit(enemy,point){
-		super.hit(enemy, point.map(x =>  x * 2));
+		super.hit(enemy, point.map(item =>  item * 2));
 	}
 }
