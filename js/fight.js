@@ -14,13 +14,13 @@ function fight(fighter, improvedFighter, ...point){
 						improvedFighter.doubleHit(fighter, item);
 					}
 					else {
-						let BreakException = {'dead':fighter.name, 'won':improvedFighter.name};
+						let BreakException = {'won':fighter.name, 'dead':improvedFighter.name};
 						throw BreakException;
 					}	
 				}
 			);
 		}catch (e) {
-			message = `GAME OVER \n${e.won.toUpperCase()} - won \n${e.dead.toUpperCase()} - dead`;
+			let message = `GAME OVER \n${e.won.toUpperCase()} - won \n${e.dead.toUpperCase()} - dead`;
 			console.log(message);
 		}
 	}	
